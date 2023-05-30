@@ -1,0 +1,53 @@
+body {
+	display: grid;
+	grid-template-areas:
+	"header header header"
+	"nav article ads"
+    "footer footer footer";
+	    grid-template-rows:60px 1fr 60px;
+        grid-template-columns: 20% 1fr 15%;
+        grid-gap: 10px;
+        height: 100vh;
+        margin: 0;
+}
+	header,footer,article,nav,div{
+		padding: 20px;
+	}
+	#pageHeader{
+		grid-area:header;
+		padding:10px ;
+		background-color: bisque;
+	}
+	#pageFooter{
+		grid-area:footer;
+		background-color: bisque;
+	}
+	#mainArticle{
+		grid-area:article;
+		background-color: bisque;		
+	}
+	#mainNav{
+		grid-area:nav;
+		background-color: bisque;	
+	}
+	#siteAds{
+		grid-area:ads;
+		background-color: bisque;		
+	}
+	.navbox{
+		width: auto;
+		height: 10px;
+		background-color: bisque;
+		text-align: center;
+		transition: 0.5s;
+	}
+
+	.navbox:hover{
+		background-color: gray;
+	}
+
+	.navtxt{
+		margin-top: -7px;
+		color: black;
+		text-decoration: none;
+	}
